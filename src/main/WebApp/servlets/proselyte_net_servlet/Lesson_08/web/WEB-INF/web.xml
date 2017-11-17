@@ -1,0 +1,89 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.SimpleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.StatusCodeDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.ServletRequestDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.ServletResponseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ErrorDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_08.ErrorDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/StatusCodeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ErrorDemo</servlet-name>
+        <url-pattern>/ErrorDemo</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorDemo</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Error</exception-type>
+        <location>/ErrorDemo</location>
+    </error-page>
+
+
+</web-app>
+
