@@ -1,0 +1,78 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>servlets.proselyte_net_servlet.lesson_09.FilterDemo</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/filterDemo</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.SimpleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.StatusCodeDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.ServletRequestDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.ServletResponseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_09.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/StatusCodeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
+    </servlet-mapping>
+</web-app>
+
