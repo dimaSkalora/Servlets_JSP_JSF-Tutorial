@@ -1,0 +1,98 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>servlets.proselyte_net_servlet.lesson_11.FilterDemo</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/filterDemo</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.SimpleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.StatusCodeDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.ServletRequestDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.ServletResponseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.SessionTrackingDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_11.CookieDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/StatusCodeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <url-pattern>/SessionTrackingDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/CookieDemo</url-pattern>
+    </servlet-mapping>
+</web-app>
+
