@@ -1,0 +1,158 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>servlets.proselyte_net_servlet.lesson_17.FilterDemo</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/filterDemo</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.SimpleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.StatusCodeDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.ServletRequestDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.ServletResponseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.SessionTrackingDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.CookieDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.DatabaseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.DateTimeDemo</servlet-class>
+    </servlet>
+
+   <servlet>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.AutoRefreshDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RedirectDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.RedirectDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PageVisitsCounterDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.PageVisitsCounterDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LocaleDemo</servlet-name>
+        <servlet-class>servlets.proselyte_net_servlet.lesson_17.LocaleDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/StatusCodeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <url-pattern>/SessionTrackingDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/CookieDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <url-pattern>/DatabaseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <url-pattern>/DateTimeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <url-pattern>/AutoRefreshDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RedirectDemo</servlet-name>
+        <url-pattern>/RedirectDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PageVisitsCounterDemo</servlet-name>
+        <url-pattern>/PageVisitsCounterDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LocaleDemo</servlet-name>
+        <url-pattern>/LocaleDemo</url-pattern>
+    </servlet-mapping>
+</web-app>
+
