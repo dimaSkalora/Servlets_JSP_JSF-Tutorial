@@ -1,0 +1,76 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+    <context-param>
+        <param-name>MyContextParam</param-name>
+        <param-value>Context Parameters are servlet independent</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>ReadInitParamsServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.ReadInitParamsServlet</servlet-class>
+        <init-param>
+            <param-name>MyInitParam</param-name>
+            <param-value>Init Params are servlet specfic</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloWorldGenericServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.HelloWorldGenericServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloWorldHttpServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.HelloWorldHttpServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadRequestParamServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.ReadRequestParamServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.LifeCycleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadHeaderServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_08.ReadHeaderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldGenericServlet</servlet-name>
+        <url-pattern>/helloWorldGenericServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldHttpServlet</servlet-name>
+        <url-pattern>/helloWorldHttpServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ReadInitParamsServlet</servlet-name>
+        <url-pattern>/readInitParamsServlet</url-pattern>
+    </servlet-mapping>
+
+   <servlet-mapping>
+       <servlet-name>ReadRequestParamServlet</servlet-name>
+       <url-pattern>/readRequestParamServlet</url-pattern>
+   </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/lifeCycleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ReadHeaderServlet</servlet-name>
+        <url-pattern>/readHeaderServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
