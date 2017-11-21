@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <servlet>
+        <servlet-name>LoginGetServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_09.LoginGetServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginPostServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_09.LoginPostServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadMultipleValuesServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_09.ReadMultipleValuesServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadAllRequestParametersServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_09.ReadAllRequestParametersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginGetServlet</servlet-name>
+        <url-pattern>/loginGetServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginPostServlet</servlet-name>
+        <url-pattern>/loginPostServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ReadMultipleValuesServlet</servlet-name>
+        <url-pattern>/readMultipleValuesServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ReadAllRequestParametersServlet</servlet-name>
+        <url-pattern>/readAllRequestParametersServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
