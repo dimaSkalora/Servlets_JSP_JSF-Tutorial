@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <servlet>
+        <servlet-name>SessionInformationServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_11.SessionInformationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionCounterServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_11.SessionCounterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_11.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlets.wideskills_com_servlet.lesson_11.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SessionInformationServlet</servlet-name>
+        <url-pattern>/sessionInformationServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SessionCounterServlet</servlet-name>
+        <url-pattern>/sessionCounterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
+
