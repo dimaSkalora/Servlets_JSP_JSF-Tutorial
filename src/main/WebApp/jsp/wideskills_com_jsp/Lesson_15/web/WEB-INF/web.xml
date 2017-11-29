@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>JSP Tutorial</display-name>
+
+    <filter>
+        <filter-name>SampleFilter</filter-name>
+        <filter-class>jsp.wideskills_com_jsp.lesson_15.SampleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SampleFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>FilterA</filter-name>
+        <filter-class>jsp.wideskills_com_jsp.lesson_15.FilterA</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterA</filter-name>
+        <url-pattern>/filter.jsp</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FilterB</filter-name>
+        <filter-class>jsp.wideskills_com_jsp.lesson_15.FilterB</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterB</filter-name>
+        <url-pattern>/filter.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>RequestInterceptorFilter</filter-name>
+        <filter-class>jsp.wideskills_com_jsp.lesson_15.RequestInterceptorFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestInterceptorFilter</filter-name>
+        <url-pattern>/protected.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>DisplayInitParamFilter</filter-name>
+        <filter-class>jsp.wideskills_com_jsp.lesson_15.DisplayInitParamFilter</filter-class>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>value1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param2</param-name>
+            <param-value>Value2</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>DisplayInitParamFilter</filter-name>
+        <url-pattern>/displayInitParamFilter/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
+
