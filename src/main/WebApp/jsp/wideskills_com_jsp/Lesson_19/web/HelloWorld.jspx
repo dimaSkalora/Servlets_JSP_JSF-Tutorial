@@ -1,0 +1,12 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+    <html>
+    <head>
+        <title> Hello World JSP Document </title>
+    </head>
+    <body>
+    <h4>
+        Hello World JSP Document
+    </h4>
+    </body>
+    </html>
+</jsp:root>

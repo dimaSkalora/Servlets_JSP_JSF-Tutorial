@@ -1,0 +1,28 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+    <jsp:directive.page contentType="text/html"/>
+    <html>
+    <head>
+        <title> JSP Document using Scripting </title>
+    </head>
+    <body>
+    <jsp:declaration>
+        String description = "description variable is a instance variable." ;
+        public int sum(int argument1, int argument2)
+        {
+            int result = argument1+ argument2;
+            return result;
+        }
+    </jsp:declaration>
+    <jsp:scriptlet>
+      <![CDATA[
+        out.println(description);
+        out.println("<br/>");
+        int result = sum( 2, 3);
+        ]]>
+    </jsp:scriptlet>
+    <jsp:expression>
+        "Result of Sum :: " +result
+    </jsp:expression>
+    </body>
+    </html>
+</jsp:root>

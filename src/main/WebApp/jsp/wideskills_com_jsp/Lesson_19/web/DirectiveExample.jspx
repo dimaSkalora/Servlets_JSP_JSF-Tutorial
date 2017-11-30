@@ -1,0 +1,28 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+    <jsp:directive.page contentType="text/html"/>
+    <jsp:directive.page import="java.util.Enumeration"/>
+    <html>
+    <head>
+        <title> JSP Document using Scripting </title>
+    </head>
+    <body>
+    <jsp:scriptlet>
+    <![CDATA[
+        Enumeration<String> headerEnumeration= request.getHeaderNames();
+        StringBuffer buffer = new StringBuffer();
+        while(headerEnumeration.hasMoreElements())
+        {
+            String headerName= headerEnumeration.nextElement();
+            String headerValue =request.getHeader(headerName);
+            buffer.append(headerName + ":" + headerValue);
+            buffer.append("<br/>");
+        }
+     ]]>
+    </jsp:scriptlet>
+    <jsp:expression>
+        buffer.toString()
+    </jsp:expression>
+    </body>
+    </html>
+    <jsp:directive.include file="footer.jsp"/>
+</jsp:root>
