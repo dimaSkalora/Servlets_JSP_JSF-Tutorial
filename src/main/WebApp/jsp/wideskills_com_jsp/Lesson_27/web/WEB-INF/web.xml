@@ -1,0 +1,71 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>JSP Tutorial</display-name>
+
+    <!--Базовая аутентификация
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>-->
+
+    <!--Аутентификация на основе форм
+    <login-config>
+      <auth-method>FORM</auth-method>
+      <form-login-config>
+        <form-login-page>/login.jsp</form-login-page>
+        <form-error-page>/auth-failure.jsp</form-error-page>
+      </form-login-config>
+    </login-config>-->
+
+    <!--Примеры декларативной безопасности-->
+    <!--Пример базовой аутентификации-->
+    <!--security-constraint>
+        <web-resource-collection>
+            <web-resource-name>
+                Private Resource
+            </web-resource-name>
+            <url-pattern>/secured.jsp</url-pattern>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>
+            </description>
+            <role-name>role1</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>role1</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config-->
+
+    <!--Пример проверки подлинности на основе форм-->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>
+                Private Resource
+            </web-resource-name>
+            <url-pattern>/securedForm.jsp</url-pattern>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>
+            </description>
+            <role-name>role1</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>role1</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/auth-login.jsp</form-login-page>
+            <form-error-page>/auth-failure.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+</web-app>
+
